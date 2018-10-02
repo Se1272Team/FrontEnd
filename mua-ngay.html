@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>BizPage Bootstrap Template</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="lib/owlcarousel/assets/owl.theme.default.min.css">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    .price {
+      color: red;
+      font-size: 2em;
+      font-weight: 500;
+      margin: 10px 0;
+    }
+
+    .star-rating i {
+      font-size: 2em;
+    }
+
+    .btn-submit{
+      border-radius: 20px;
+      transition: all 0.3 ease-in-out;
+    }
+    .btn-submit:hover{
+      background-color: rgba(0, 0, 0, 0.2);
+      color: black;
+    }
+
+    .img-table-of-content{
+      display: block;
+      margin: auto;
+    }
+    .btn-shopping-cart{
+      color: white;
+      padding: 10px 20px;
+      margin-top: 20px;
+    }
+    .tbl-thong-tin-chi-tiet tr td:nth-of-type(1){
+      background-color: rgba(0,0,0,0.1);
+      font-weight: 500;
+    }
+    .border-radius-custom{
+      border-radius: 15px;
+    }
+    section{
+      background-color:rgba(0,0,0,0.04);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header id="header">
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left">
+        <h3><a href="#intro" class="scrollto">DTBOOKS</a></h3>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#intro">Home</a></li>
+          <li><a href="#">Cac the loai sach</a></li>
+          <li><a href="#">Bao chi - Su kien - Nguoi dung</a></li>
+          <li><a href="#">cac tac gia</a></li>
+          <li><a href="#">Ve DTBOOKS</a></li>
+          <!-- <li class="menu-has-children"><a href="">Drop Down</a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Drop Down 5</a></li>
+            </ul>
+          </li> -->
+          <li><a href="#">Lien he</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="intro" style="height: 80px">
+    
+  </section>
+
+  <section class="my-3 py-3" style="margin-top: 50px">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-4">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <img src="img/mua-ngay-sach.jpg" alt="" class="img-fluid">
+                </li>
+                <li class="list-group-item">
+                  <img src="img/mua-ngay-sach.jpg" alt="" class="img-fluid">
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-8">
+              <img src="img/mua-ngay-sach.jpg" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 right-content">
+          <h4>Để Học Tốt Tiếng Việt 5 - Tập 1</h4>
+          <div class="author-info">
+            Tac gia: <a href="">Lê Thị Phương</a>
+          </div>
+          <div class="price">44.100<sup>d</sup></div>
+          <small>Tiết kiệm: <span class="text-danger">55%</span> (53.900 ₫)</small><br>
+          <small>Giá thị trường: 98.000 ₫</small>
+          <div class="row mt-3">
+              <div class="col-12">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn bg-main-color btn-sub-product-quantity">
+                    <i class="fa fa-minus text-white"></i>
+                  </button>
+                  <input type="text" class="form-control txt-products-quantity" style="width: 50px; text-align: center; padding: 0">
+                  <button type="button" class="btn bg-main-color btn-add-product-quantity">
+                    <i class="fa fa-plus text-white"></i> 
+                  </button>
+                </div>
+              </div>
+          </div>
+          <button class="btn bg-main-color btn-shopping-cart">
+            <i class="fa fa-shopping-cart"></i>
+            Chon mua hang
+          </button>
+        </div>
+      </div> 
+    </div>
+  </section>
+
+  <section class="my-3 py-3">
+    <div class="container">
+    <h4>THÔNG TIN CHI TIẾT</h4>
+      <div class="row">
+        <div class="col-sm-8">
+          <table class="table tbl-thong-tin-chi-tiet border">
+            <tr>
+              <td>Công ty phát hành	</td>
+              <td>
+                <a href="">TKBooks</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Tác giả</td>
+              <td>Lê Thị Phương</td>
+            </tr>
+            <tr>
+              <td>Ngày xuất bản</td>
+              <td>10-2017</td>
+            </tr>
+            <tr>
+              <td>Kích thước</td>
+              <td>17 x 24 cm</td>
+            </tr>
+            <tr>
+              <td>Nhà xuất bản</td>
+              <td>Nhà Xuất Bản Đại Học Quốc Gia Hà Nội</td>
+            </tr>
+            <tr>
+              <td>Loại bìa</td>
+              <td>Bìa mềm</td>
+            </tr>
+            <tr>
+              <td>Số trang</td>
+              <td>260</td>
+            </tr>
+            <tr>
+              <td>SKU</td>
+              <td>2483447017295</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="my-3 py-3">
+      <div class="container">
+          <h4>GIỚI THIỆU SÁCH</h4>
+            <div class="row">
+              <div class="col-sm-8">
+                <strong>Để Học Tốt Tiếng Việt 5 - Tập 1</strong>
+                <p>Các em học sinh thân mến!</p>
+                <p>Hiện nay, chương trình Tiếng Việt bậc Tiểu học được chia thành các chủ điểm khác nhau. Mỗi chủ điểm là sự tổng hợp của các phân môn cụ thể, bao gồm: Tập đọc, Chính tả, Luyện từ và câu, Kể chuyện, Tập làm văn. Những bài học ở các phân môn không những cung cấp cho các em kiến thức cơ bản nhất về xã hội và nhân văn, là nền tảng vững chắc bồi dưỡng những phẩm chất tốt đẹp cho các em, mà còn giúp các em thêm yêu tiếng mẹ đẻ, có ý thức giữ gìn sự trong sáng của tiếng Việt.</p>
+                <p>Nhằm giúp các em thuận lợi hơn trong việc tiếp thu, luyện tập và thực hành môn Tiếng Việt lớp 5, tác giả biên soạn bộ sách Để học tốt Tiếng Việt 5 (gồm hai tập).</p>
+                <p>Nội dung của bộ sách bám sát chương trình trong hai cuốn sách giáo khoa Tiếng Việt lớp 5. Vì vậy, các em dễ dàng theo dõi, so sánh và đưa ra phương án trả lời cho những câu hỏi trong sách giáo khoa. Với những phần trả lời cụ thể, chi tiết, cuốn sách sẽ giúp cha mẹ, anh chị có thể hướng dẫn con, em mình học ở nhà dễ dàng hơn.</p>
+                <p>Tác giả hi vọng cuốn sách sẽ là nguồn tài liệu bổ ích cho các em học sinh, đồng thời sẽ là một tài liệu tham khảo hữu ích đối với các thầy cô giáo đang giảng dạy và là cẩm nang đối với các bậc phụ huynh khi hướng dẫn con học ở nhà.</p>
+              </div>
+            </div>
+          </div>
+  </section>
+
+  <section class="my-3 py-3">
+      <div class="container">
+        <h4>GIỚI THIỆU SÁCH</h4>
+          <div class="row">
+              <div class="carousel-book-categiries owl-carousel owl-theme">
+                  <div class="card">
+                    <img class="card-img-top" src="./img/book.jpg" alt="Card image cap">
+                    <div class="card-body card-body-book-category">
+                      <h6 class="book-category text-center">Sach tieng Anh tieu hoc</h6>
+                      <p class="product-quantity text-center">71 SAN PHAM</p>
+                    </div>
+                  </div>
+        
+                  <div class="card">
+                    <img class="card-img-top" src="./img/book.jpg" alt="Card image cap">
+                    <div class="card-body card-body-book-category">
+                      <h6 class="book-category text-center">Sach tieng Anh tieu hoc</h6>
+                      <p class="product-quantity text-center">71 SAN PHAM</p>
+                    </div>
+                  </div>
+        
+                  <div class="card">
+                    <img class="card-img-top" src="./img/book.jpg" alt="Card image cap">
+                    <div class="card-body card-body-book-category">
+                      <h6 class="book-category text-center">Sach tieng Anh tieu hoc</h6>
+                      <p class="product-quantity text-center">71 SAN PHAM</p>
+                    </div>
+                  </div>
+        
+                    <div class="card">
+                      <img class="card-img-top" src="./img/book.jpg" alt="Card image cap">
+                      <div class="card-body card-body-book-category">
+                        <h6 class="book-category text-center">Sach tieng Anh tieu hoc</h6>
+                        <p class="product-quantity text-center">71 SAN PHAM</p>
+                      </div>
+                    </div>
+        
+                  <div class="card">
+                    <img class="card-img-top" src="./img/book.jpg" alt="Card image cap">
+                    <div class="card-body card-body-book-category">
+                      <h6 class="book-category text-center">Sach tieng Anh tieu hoc</h6>
+                      <p class="product-quantity text-center">71 SAN PHAM</p>
+                    </div>
+                  </div>
+        
+                  <div class="card">
+                    <img class="card-img-top" src="./img/book.jpg" alt="Card image cap">
+                    <div class="card-body card-body-book-category">
+                      <h6 class="book-category text-center">Sach tieng Anh tieu hoc</h6>
+                      <p class="product-quantity text-center">71 SAN PHAM</p>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+  </section>
+
+  <section class="my-3 py-3">
+    <div class="container">
+      <h4>HỎI, ĐÁP VỀ SẢN PHẨM</h4>
+      <div class="row my-3">
+        <div class="col-lg-10 col-md-8 col-sm-6">
+          <input type="text" class="form-control border-radius-custom" placeholder="Hay dat cau cau hoi lien quan den san pham">
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <button class="btn bg-main-color btn-block text-white btn-submit">
+            <i class="fa fa-paper-plane"></i>
+            Gui cau hoi
+          </button>
+        </div>
+      </div>
+      <strong>Các câu hỏi thường gặp về sản phẩm:</strong>
+      <ul class="list-group mt-2 list-questions">
+        <li class="list-group-item">Chế độ bảo hành cùng cách thức vận chuyển sản phẩm này thế nào?</li>
+        <li class="list-group-item">Kích thước sản phẩm này ?</li> 
+        <li class="list-group-item">Sản phẩm này có dễ dùng không ?</li> 
+      </ul>
+    </div>
+  </section>
+
+  <section class="my-3 py-3" style="font-size: 0.9em;">
+    <div class="container">
+      <h4>KHÁCH HÀNG NHẬN XÉT</h4>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <strong>1. Đánh giá của bạn về sản phẩm này:</strong>
+              <span class="star-rating">
+                <i class="fa fa-star"></i> 
+                <i class="fa fa-star"></i> 
+                <i class="fa fa-star"></i> 
+                <i class="fa fa-star"></i> 
+                <i class="fa fa-star"></i> 
+              </span>
+              <div class="form-group mt-2">
+                <label class="font-weight-bold">2. Tiêu đề của nhận xét:</label>
+                <div class="form-group">
+                  <input type="text" class="form-control border-radius-custom" placeholder="Nhap tieu de nhan xet(khong bat buoc)">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="font-weight-bold">3. Viết nhận xét của bạn vào bên dưới:</label>
+                <textarea rows="5" class="form-control border-radius-custom" placeholder="Nham xet cua ban ve san pham nay..."></textarea>
+              </div>
+                <button class="btn bg-main-color text-white btn-submit">
+                  <i class="fa fa-paper-plane"></i>
+                  Gui nhan xet 
+                </button>
+            </div>
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-md-4">
+                  <a href="" style="width: 100%"><img src="img/mua-ngay-sach.jpg" alt="" class="img-fluid"></a>
+                </div>
+                <div class="col-md-8 pt-4">
+                  <h5>Để Học Tốt Tiếng Việt 5 - Tập 1</h5>
+                  <div class="book-author">Tác giả <a href="">Lê Thị Phương</a></div>
+                </div>
+              </div>
+              <p class="mt-3">Quý khách có thắc mắc về sản phẩm hoặc dịch vụ của Tiki? Quý khách đang muốn khiếu nại hay phản hồi về đơn hàng đã mua?</p>
+              <p>Tham khảo thông tin thêm tại Thông tin hỗ trợ.</p>
+              <p>Liên hệ hotline <a href="">1900-6035</a> (1,000đ/phút), hoặc gửi thông tin về email <a href="">hotro@tiki.vn</a> để được hỗ trợ ngay.</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+  </section>
+
+
+
+  <footer class="bg-main-color text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <ul class="list-group list-group-custom">
+            <li class="list-group-item">
+              CONG TY CO PHAN SACH DTBOOKS
+            </li>
+            <li class="list-group-item">
+              Địa chỉ VP Hà Nội : Lô 34E - Khu đấu giá 3ha - Phúc Diễn - Bắc Từ Liêm - Hà Nội
+            </li>
+            <li class="list-group-item">
+              Hotline: 0901 701 202 - 0243 7921694 (máy lẻ 121)
+            </li>
+            <li class="list-group-item">
+              Email: dtbooks@gmail.com
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul class="list-group list-group-custom">
+            <li class="list-group-item">
+              Chi nhánh: Số 45 đường 8, KP5, Hiệp Bình Chánh, Thủ Đức, TP Hồ Chí Minh
+            </li>
+            <li class="list-group-item">
+              Hotline:(84-4) 37.921.466 - 0866609398
+            </li>
+            <li class="list-group-item">
+              Email: dtbooks@gmail.com
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+  <script src="js/carousel.js"></script>
+  <script>
+    $('.txt-products-quantity').val(1);
+    $('.btn-add-product-quantity').click(addProductsQuantityToCart);
+    $('.btn-sub-product-quantity').click(subProductsQuantityToCart);
+
+    function addProductsQuantityToCart(){
+      let val = $('.txt-products-quantity').val();
+      let num = 1;
+      if(checkPositiveNumber(val)) num = Math.floor(val) + 1;
+      $('.txt-products-quantity').val(num);
+    }
+    function subProductsQuantityToCart(){
+      let val = $('.txt-products-quantity').val();
+      let num = 1;
+      if(checkPositiveNumber(val) && Math.floor(val) > 1){
+        num = Math.floor(val) - 1;
+      } 
+      $('.txt-products-quantity').val(num);
+    }
+    function checkPositiveNumber(val){
+      if(val == null || val == undefined) return false;
+      if(val.trim() == '') return false;
+      if(isNaN(val)) return false;
+      if(Number(val) <= 0) return false;
+      return true;
+    }
+  </script>
+</body>
+
+</html>
