@@ -56,6 +56,23 @@
       display: block;
       margin: auto;
     }
+    .modalShoppingCart .modal-dialog{
+      max-width: 90%;
+    }
+
+    .quantity-input{
+      width: 30px!important; 
+      padding: 0!important; 
+      margin: 0!important;
+    }
+    .fa.fa-shopping-cart{
+      color: white;
+      font-size: 1.2em;
+    }
+    .cart-navbar-item{
+      border: 2px solid #ccc;
+      color: darkgoldenrod!important;
+    }
   </style>
 </head>
 
@@ -84,14 +101,20 @@
             </ul>
           </li> -->
           <li><a href="#">Lien he</a></li>
+          <li class="cart-navbar-item">
+            <i class="fa fa-shopping-cart"></i>
+            <a href="#">
+            Gio hang
+          </a>
+        </li>
         </ul>
       </nav>
     </div>
   </header>
 
   <section id="intro" style="height: 80px">
-    
-    </section>
+
+  </section>
 
   <section class="my-5" style="margin-top: 50px">
     <div class="container">
@@ -132,7 +155,7 @@
               </div>
               <div class="row btn-buy-read">
                 <div class="col-6">
-                  <button class="btn bg-main-color btn-block">Mua ngay</button>
+                  <button class="btn bg-main-color btn-block" data-target="#modalShoppingCart" data-toggle="modal">Mua ngay</button>
                 </div>
                 <div class="col-6">
                   <button class="btn bg-main-color btn-block">Doc thu</button>
@@ -193,13 +216,15 @@
                           <li class="list-group-item">
                             Phần thứ ba: Diệt tật ưu phiền đi đừng để nó diệt ta
                           </li>
-                          <li class="list-group-item">Phần thứ tư: Bảy cách luyện tinh thần để được thảnh thơi và hoan hỉ</li>
+                          <li class="list-group-item">Phần thứ tư: Bảy cách luyện tinh thần để được thảnh thơi và hoan
+                            hỉ</li>
                           <li class="list-group-item">
-                              Phần thứ năm: Hoàng kim quy tắc để thắng ưu tư
+                            Phần thứ năm: Hoàng kim quy tắc để thắng ưu tư
                           </li>
-                          <li class="list-group-item">Phần thứ sáu: Sáu cách tránh mệt và ưu tư để bảo toàn nghị lực và can đảm</li>
+                          <li class="list-group-item">Phần thứ sáu: Sáu cách tránh mệt và ưu tư để bảo toàn nghị lực và
+                            can đảm</li>
                           <li class="list-group-item">
-                              Phần thứ bảy: Lựa nào thành công và mãn nguyện
+                            Phần thứ bảy: Lựa nào thành công và mãn nguyện
                           </li>
                           <li class="list-group-item">Phần thứ tám: Làm sao bớt lo về tài chính</li>
                         </ul>
@@ -212,13 +237,19 @@
                           <li class="list-group-item"> Lựa nghề nào thành công và mãn nguyện</li>
                           <li class="list-group-item">Làm sao bớt lo về tài chính</li>
                         </ul>
-                        <p>Thông qua cuốn sách, độc giả xây dựng được thái độ sống tích cực, an tâm cảm nhận hạnh phúc và loại bỏ thói quen lo lắng. Bạn học được cách đóng chặt những cánh cửa sắt dẫn đến quá khứ và tương lai. Chỉ sống trong những vách ngăn của hiện tại, nhìn nhận những mặt tích cực của cuộc sống.</p>
-                        <p>Cuộc sống luôn có nhiều điều làm bạn phải lo lắng từ học tập, công việc tới gia đình. Chỉ cần bình tĩnh và kiên trì bạn sẽ sớm tìm ra cách giải quyết cho vấn đề của mình. Hãy dẹp bỏ những nỗi lo, những ưu tư, phiền muộn và sống một cuộc đời tươi đẹp cùng cuốn sách “Quẳng gánh lo và vui sống” của Dale Carnegie.</p>
+                        <p>Thông qua cuốn sách, độc giả xây dựng được thái độ sống tích cực, an tâm cảm nhận hạnh phúc
+                          và loại bỏ thói quen lo lắng. Bạn học được cách đóng chặt những cánh cửa sắt dẫn đến quá khứ
+                          và tương lai. Chỉ sống trong những vách ngăn của hiện tại, nhìn nhận những mặt tích cực của
+                          cuộc sống.</p>
+                        <p>Cuộc sống luôn có nhiều điều làm bạn phải lo lắng từ học tập, công việc tới gia đình. Chỉ
+                          cần bình tĩnh và kiên trì bạn sẽ sớm tìm ra cách giải quyết cho vấn đề của mình. Hãy dẹp bỏ
+                          những nỗi lo, những ưu tư, phiền muộn và sống một cuộc đời tươi đẹp cùng cuốn sách “Quẳng
+                          gánh lo và vui sống” của Dale Carnegie.</p>
                         <!-- end about book -->
                       </div>
                       <hr>
                       <div class="book-table-of-contents my-4">
-                        <img src="img/muc-luc-quang-ganh-lo-di-1.jpg" alt="" class="img-fluid img-table-of-content" >
+                        <img src="img/muc-luc-quang-ganh-lo-di-1.jpg" alt="" class="img-fluid img-table-of-content">
                         <img src="img/muc-luc-quang-ganh-lo-di-2.jpg" alt="" class="img-fluid img-table-of-content">
                         <img src="img/muc-luc-quang-ganh-lo-di-3.jpg" alt="" class="img-fluid img-table-of-content">
                       </div>
@@ -230,30 +261,50 @@
                       </style>
                       <div class="author-info mt-4">
                         <h4 class="text-center font-weight-bold"><span class="author-name">TÁC GIẢ DALE CARNEGIE</span></h4>
-                        <h5 class="text-center font-weight-bold">Chuyên gia về nghệ thuật giao tiếp ứng xử và phát triển bản thân</h5>
+                        <h5 class="text-center font-weight-bold">Chuyên gia về nghệ thuật giao tiếp ứng xử và phát
+                          triển bản thân</h5>
                         <img src="img/dale-carnegie.jpg" alt="" class="img-fluid">
 
-                        <p>Là tác giả của những cuốn sách nằm trong danh mục sách bán chạy nhất và được biết đến nhiều nhất trên thế giới như: Đắc Nhân Tâm, Quẳng gánh lo và vui sống…Cuốn sách trở thành một bestseller từ khi xuất hiện năm 1937, và được tái bản tới lần thứ 17 chỉ trong vài tháng. Khi Dale Carnegie mất, cuốn sách của ông đã được bán tới con số 5 triệu bản bằng 31 ngôn ngữ.</p>
-                        <p>Dale Carnegie tên đầy đủ là Dale Breckenridge (1888-1955) là nhà văn và diễn giả người Mỹ, ngoài ra ông còn là người phát triển các lớp tự giáo dục, nghệ thuật bán hàng, huấn luyện đoàn thể, nói trước công chúng và các kỹ năng giao tiếp giữa mọi người.</p>
-                        <p>Và, thật diệu kỳ, nhiều thập kỷ đã trôi qua, tư duy của thời đại ngày một thay đổi, thế nhưng điều đó vẫn không thể khiến những tác phẩm của ông đánh mất đi tầm quan trọng và sức lan tỏa của nó trên khắp thế giới mà vẫn đứng vững vị trí quyển sách “gối đầu giường” cho chúng ta – những hậu bối trong thời đại mới.</p>
+                        <p>Là tác giả của những cuốn sách nằm trong danh mục sách bán chạy nhất và được biết đến nhiều
+                          nhất trên thế giới như: Đắc Nhân Tâm, Quẳng gánh lo và vui sống…Cuốn sách trở thành một
+                          bestseller từ khi xuất hiện năm 1937, và được tái bản tới lần thứ 17 chỉ trong vài tháng. Khi
+                          Dale Carnegie mất, cuốn sách của ông đã được bán tới con số 5 triệu bản bằng 31 ngôn ngữ.</p>
+                        <p>Dale Carnegie tên đầy đủ là Dale Breckenridge (1888-1955) là nhà văn và diễn giả người Mỹ,
+                          ngoài ra ông còn là người phát triển các lớp tự giáo dục, nghệ thuật bán hàng, huấn luyện
+                          đoàn thể, nói trước công chúng và các kỹ năng giao tiếp giữa mọi người.</p>
+                        <p>Và, thật diệu kỳ, nhiều thập kỷ đã trôi qua, tư duy của thời đại ngày một thay đổi, thế
+                          nhưng điều đó vẫn không thể khiến những tác phẩm của ông đánh mất đi tầm quan trọng và sức
+                          lan tỏa của nó trên khắp thế giới mà vẫn đứng vững vị trí quyển sách “gối đầu giường” cho
+                          chúng ta – những hậu bối trong thời đại mới.</p>
 
                         <h4 class="text-center font-weight-bold"><span class="author-name">TÁC GIẢ DALE CARNEGIE</span></h4>
-                        <h5 class="text-center font-weight-bold short-author-description">Người dịch ĐẮC NHÂN TÂM đầu tiên tại Việt Nam được yêu thích nhất!
-                          </h5>
-                          
+                        <h5 class="text-center font-weight-bold short-author-description">Người dịch ĐẮC NHÂN TÂM đầu
+                          tiên tại Việt Nam được yêu thích nhất!
+                        </h5>
+
                         <img src="img/dale-carnegie.jpg" alt="" class="img-fluid">
-                        <p>Là tác giả của những cuốn sách nằm trong danh mục sách bán chạy nhất và được biết đến nhiều nhất trên thế giới như: Đắc Nhân Tâm, Quẳng gánh lo và vui sống…Cuốn sách trở thành một bestseller từ khi xuất hiện năm 1937, và được tái bản tới lần thứ 17 chỉ trong vài tháng. Khi Dale Carnegie mất, cuốn sách của ông đã được bán tới con số 5 triệu bản bằng 31 ngôn ngữ.</p>
-                        <p>Dale Carnegie tên đầy đủ là Dale Breckenridge (1888-1955) là nhà văn và diễn giả người Mỹ, ngoài ra ông còn là người phát triển các lớp tự giáo dục, nghệ thuật bán hàng, huấn luyện đoàn thể, nói trước công chúng và các kỹ năng giao tiếp giữa mọi người.</p>
-                        <p>Và, thật diệu kỳ, nhiều thập kỷ đã trôi qua, tư duy của thời đại ngày một thay đổi, thế nhưng điều đó vẫn không thể khiến những tác phẩm của ông đánh mất đi tầm quan trọng và sức lan tỏa của nó trên khắp thế giới mà vẫn đứng vững vị trí quyển sách “gối đầu giường” cho chúng ta – những hậu bối trong thời đại mới.</p>
+                        <p>Là tác giả của những cuốn sách nằm trong danh mục sách bán chạy nhất và được biết đến nhiều
+                          nhất trên thế giới như: Đắc Nhân Tâm, Quẳng gánh lo và vui sống…Cuốn sách trở thành một
+                          bestseller từ khi xuất hiện năm 1937, và được tái bản tới lần thứ 17 chỉ trong vài tháng. Khi
+                          Dale Carnegie mất, cuốn sách của ông đã được bán tới con số 5 triệu bản bằng 31 ngôn ngữ.</p>
+                        <p>Dale Carnegie tên đầy đủ là Dale Breckenridge (1888-1955) là nhà văn và diễn giả người Mỹ,
+                          ngoài ra ông còn là người phát triển các lớp tự giáo dục, nghệ thuật bán hàng, huấn luyện
+                          đoàn thể, nói trước công chúng và các kỹ năng giao tiếp giữa mọi người.</p>
+                        <p>Và, thật diệu kỳ, nhiều thập kỷ đã trôi qua, tư duy của thời đại ngày một thay đổi, thế
+                          nhưng điều đó vẫn không thể khiến những tác phẩm của ông đánh mất đi tầm quan trọng và sức
+                          lan tỏa của nó trên khắp thế giới mà vẫn đứng vững vị trí quyển sách “gối đầu giường” cho
+                          chúng ta – những hậu bối trong thời đại mới.</p>
                       </div>
                       <div class="testimonials-and-book">
-                          <h4 class="text-center font-weight-bold"><span class="author-name">NGƯỜI NỔI TIẾNG ĐỒNG HÀNH CÙNG QUẲNG GÁNH LO VÀ VUI SỐNG
-                            </span></h4>
-                            <p>Tiến sĩ Lê Thẩm Dương… cùng rất nhiều người nổi tiếng giới thiệu về cuốn sách ĐẮC NHÂN TÂM & QUẲNG GÁNH LO VÀ VUI SỐNG!</p>
+                        <h4 class="text-center font-weight-bold"><span class="author-name">NGƯỜI NỔI TIẾNG ĐỒNG HÀNH
+                            CÙNG QUẲNG GÁNH LO VÀ VUI SỐNG
+                          </span></h4>
+                        <p>Tiến sĩ Lê Thẩm Dương… cùng rất nhiều người nổi tiếng giới thiệu về cuốn sách ĐẮC NHÂN TÂM &
+                          QUẲNG GÁNH LO VÀ VUI SỐNG!</p>
                       </div>
                     </div>
                   </div>
-                  
+
                 </div>
 
                 <div id="more-info" class="tab-pane fade">
@@ -294,47 +345,50 @@
                       <ul class="list-group">
                         <li class="list-group-item">
                           <div class="star-rating">
-                            <i class="fa fa-star"></i> 
-                            <i class="fa fa-star"></i> 
-                            <i class="fa fa-star"></i> 
-                            <i class="fa fa-star"></i> 
-                            <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
                           </div>
                           <div class="">
                             <strong class="commentor">Bui Duc Tai</strong> - <span class="date-comment">17/09/2018</span>
                           </div>
                           <div class="comment-content">
-                            <p>Mới đặt sách xong mà đã có luôn. Nội dung thì khỏi phải bàn, giúp mình có thêm động lực và kinh nghiệm sống, giải quyết các vấn đề trong cuộc sống.</p>
+                            <p>Mới đặt sách xong mà đã có luôn. Nội dung thì khỏi phải bàn, giúp mình có thêm động lực
+                              và kinh nghiệm sống, giải quyết các vấn đề trong cuộc sống.</p>
                           </div>
                         </li>
                         <li class="list-group-item">
                           <div class="star-rating">
-                            <i class="fa fa-star"></i> 
-                            <i class="fa fa-star"></i> 
-                            <i class="fa fa-star"></i> 
-                            <i class="fa fa-star"></i> 
-                            <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
                           </div>
                           <div class="">
                             <strong class="commentor">Bui Duc Tai</strong> - <span class="date-comment">17/09/2018</span>
                           </div>
                           <div class="comment-content">
-                            <p>Mới đặt sách xong mà đã có luôn. Nội dung thì khỏi phải bàn, giúp mình có thêm động lực và kinh nghiệm sống, giải quyết các vấn đề trong cuộc sống.</p>
+                            <p>Mới đặt sách xong mà đã có luôn. Nội dung thì khỏi phải bàn, giúp mình có thêm động lực
+                              và kinh nghiệm sống, giải quyết các vấn đề trong cuộc sống.</p>
                           </div>
                         </li>
                         <li class="list-group-item">
                           <div class="star-rating">
-                            <i class="fa fa-star"></i> 
-                            <i class="fa fa-star"></i> 
-                            <i class="fa fa-star"></i> 
-                            <i class="fa fa-star"></i> 
-                            <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
                           </div>
                           <div class="">
                             <strong class="commentor">Bui Duc Tai</strong> - <span class="date-comment">17/09/2018</span>
                           </div>
                           <div class="comment-content">
-                            <p>Mới đặt sách xong mà đã có luôn. Nội dung thì khỏi phải bàn, giúp mình có thêm động lực và kinh nghiệm sống, giải quyết các vấn đề trong cuộc sống.</p>
+                            <p>Mới đặt sách xong mà đã có luôn. Nội dung thì khỏi phải bàn, giúp mình có thêm động lực
+                              và kinh nghiệm sống, giải quyết các vấn đề trong cuộc sống.</p>
                           </div>
                         </li>
                       </ul>
@@ -401,7 +455,7 @@
                       </form>
                     </div>
                   </div>
-                  
+
                 </div>
               </div>
             </div>
@@ -448,7 +502,91 @@
       </div>
     </div>
   </footer>
-
+  
+  <div class="modal fade modalShoppingCart" id="modalShoppingCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Don hang</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="table-responsive">
+            
+            <table class="table table-striped table-hover">
+              <thead>
+                <tr>
+                  <th>STT</th>
+                  <th>Ten sach</th>
+                  <th>Hinh anh</th>
+                  <th>Don gia</th>
+                  <th>So luong</th>
+                  <th>Tong gia</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Sach tieng anh</td>
+                  <td>
+                    <img src="img/book.jpg" alt="" style="width: 80px; height: 100px">
+                  </td>
+                  <td>50.000d</td>
+                  <td>
+                    <div class="input-group">
+                      <button class="btn btn-warning">-</button>
+                      <input type="text" class="form-control text-center quantity-input" value="3">
+                      <button class="btn btn-info">+</button>
+                    </div>
+                  </td>
+                  <td>150.000d</td>
+                  <td>
+                    <button class="btn btn-danger">
+                      <i class="fa fa-times"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Sach tieng anh</td>
+                  <td>
+                    <img src="img/book.jpg" alt="" style="width: 80px; height: 100px">
+                  </td>
+                  <td>50.000d</td>
+                  <td>
+                    <div class="input-group">
+                      <button class="btn btn-warning">-</button>
+                      <input type="text" class="form-control text-center quantity-input" value="3">
+                      <button class="btn btn-info">+</button>
+                    </div>
+                  </td>
+                  <td>150.000d</td>
+                  <td>
+                    <button class="btn btn-danger">
+                      <i class="fa fa-times"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="5" class="font-weight-bold">Tong tien</td>
+                  <td>300.00d</td>
+                </tr>
+              </tbody>
+            </table>
+            
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Mua hang</button>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
